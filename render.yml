@@ -1,3 +1,4 @@
+# In your render.yaml
 services:
   - type: cron
     name: n8n-keepalive
@@ -5,3 +6,4 @@ services:
     plan: free
     schedule: "*/5 * * * *"
     startCommand: "bash keepalive.sh"
+    buildCommand: ""  # Explicitly set empty build command
