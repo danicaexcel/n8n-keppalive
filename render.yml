@@ -1,0 +1,7 @@
+services:
+- type: cron
+name: n8n-keepalive
+env: docker
+plan: free
+schedule: "*/5 * * * *"
+dockerCommand: ["bash", "keepalive.sh"]
